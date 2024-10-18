@@ -42,6 +42,9 @@
 
 #define MAX_UARTS    10
 
+#define SERIAL_DATA_9        (0x500ul)
+#define SERIAL_9N1           (SERIAL_STOP_BIT_1 | SERIAL_PARITY_NONE  | SERIAL_DATA_9)
+
 typedef enum {
   TX_STARTED,
   TX_STOPPED
